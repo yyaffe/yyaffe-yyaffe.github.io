@@ -22,6 +22,9 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
               "options": []}
                         ],
           "actions": [
+             { "name": "put_on_sale",
+              "label": "Put On Sale",
+              "params": {"sale_percentage": "numeric"}},
             { "name": "get_rule_resulting_information",
               "label": "get_rule_resulting_information",
               "params": [{"rule_id":"numeric"}, {"secret_id":"numeric"}, {"priority":"numeric"}]}
