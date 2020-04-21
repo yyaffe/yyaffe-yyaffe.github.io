@@ -20,10 +20,10 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
           "actions": [
             { "name": "put_on_sale",
               "label": "Put On Sale",
-              "params": [{name: "sale_percentage", label: "Sale Percentage", fieldType : "numeric"}]},
+              "params": {"sale_percentage": "numeric"}},
             { "name": "order_more",
               "label": "Order More",
-              "params": [{name: "number_to_order", label: "Number To Order", fieldType : "numeric"}]}
+              "params": {"number_to_order": "numeric"}}
           ],
           "variable_type_operators": {
             "numeric": [ {"name": "equal_to",
