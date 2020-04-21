@@ -4,19 +4,22 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
 
   function getInitialData() {
     return {"variables": [
-            { "name": "expiration_days",
-              "label": "Days until expiration",
-              "field_type": "numeric",
-              "options": []},
-            { "name": "current_month",
-              "label": "Current Month",
+            { "name": "tag",
+              "label": "Tag",
               "field_type": "string",
               "options": []},
-            { "name": "goes_well_with",
-              "label": "Goes Well With",
-              "field_type": "select",
-              "options": ["Eggnog", "Cookies", "Beef Jerkey"]}
-                        ],
+            { "name": "region",
+              "label": "Region",
+              "field_type": "string",
+              "options": []},
+            { "name": "vpc",
+              "label": "VPC",
+              "field_type": "string",
+              "options": []},
+            { "name": "sub_net",
+              "label": "Subnet",
+              "field_type": "string",
+              "options": []},
           "actions": [
             { "name": "put_on_sale",
               "label": "Put On Sale",
