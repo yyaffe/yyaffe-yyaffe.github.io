@@ -35,6 +35,10 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
   ],
   "actions": [
     {
+      "name": "refresh",
+      "label": "Refreh"
+    },
+    {
       "name": "get_rule_resulting_information",
       "label": "Rule Result",
       "params":
