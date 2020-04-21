@@ -10,7 +10,7 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
               "options": []},
             { "name": "region",
               "label": "Region",
-              "field_type": "string",
+              "field_type": "select",
               "options": ["us-west-1", "eu-west-1"]},
             { "name": "vpc",
               "label": "VPC",
