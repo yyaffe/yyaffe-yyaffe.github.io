@@ -6,7 +6,7 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
     return {"variables": [
             { "name": "tag",
               "label": "Tag",
-              "field_type": "string",
+              "field_type": "numeric",
               "options": []},
             { "name": "region",
               "label": "Region",
@@ -14,12 +14,13 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
               "options": []},
             { "name": "vpc",
               "label": "VPC",
-              "field_type": "string",
+              "field_type": "select",
               "options": []},
-            { "name": "sub_net",
+            { "name": "subnet",
               "label": "Subnet",
-              "field_type": "string",
-              "options": []},
+              "field_type": "select",
+              "options": []}
+                        ],
           "actions": [
             { "name": "put_on_sale",
               "label": "Put On Sale",
