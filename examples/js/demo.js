@@ -3,56 +3,106 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
   var occupationOptions = [ "Software Engineer", "Biz Dev", "Marketing" ];
 
   function getInitialData() {
-    return {"variables": [
-            { "name": "tag",
-              "label": "Tag",
-              "field_type": "string",
-              "options": []},
-            { "name": "region",
-              "label": "Region",
-              "field_type": "select",
-              "options": ["us-west-1", "eu-west-1"]},
-            { "name": "vpc",
-              "label": "VPC",
-              "field_type": "string",
-              "options": []},
-            { "name": "subnet",
-              "label": "Subnet",
-              "field_type": "string",
-              "options": []}
-                        ],
-          "actions": [
-             { "name": "put_on_sale",
-              "label": "Put On Sale",
-              "params": {"sale_percentage": "numeric"}},
-            { "name": "get_rule_resulting_information",
-              "label": "get_rule_resulting_information",
-              "params": [{"rule_id":"numeric"}, {"secret_id":"numeric"}, {"priority":"numeric"}]}
-          ],
-          "variable_type_operators": {
-            "numeric": [ {"name": "equal_to",
-                          "label": "Equal To",
-                          "input_type": "numeric"},
-                         {"name": "less_than",
-                          "label": "Less Than",
-                          "input_type": "numeric"},
-                         {"name": "greater_than",
-                          "label": "Greater Than",
-                          "input_type": "numeric"}],
-            "string": [ { "name": "equal_to",
-                          "label": "Equal To",
-                          "input_type": "text"},
-                        { "name": "non_empty",
-                          "label": "Non Empty",
-                          "input_type": "none"}],
-            "select": [ { "name": "contains",
-                          "label": "Contains",
-                          "input_type": "select"},
-                        { "name": "does_not_contain",
-                          "label": "Does Not Contain",
-                          "input_type": "select"}]
-          }
-    };
+    return {
+  "variables": [
+    {
+      "name": "tag",
+      "label": "Tag",
+      "field_type": "string",
+      "options": []
+    },
+    {
+      "name": "region",
+      "label": "Region",
+      "field_type": "select",
+      "options": [
+        "us-west-1",
+        "eu-west-1"
+      ]
+    },
+    {
+      "name": "vpc",
+      "label": "VPC",
+      "field_type": "string",
+      "options": []
+    },
+    {
+      "name": "subnet",
+      "label": "Subnet",
+      "field_type": "string",
+      "options": []
+    }
+  ],
+  "actions": [
+    {
+      "name": "put_on_sale",
+      "label": "Put On Sale",
+      "params": [
+        {
+          "sale_percentage": "numeric"
+        }
+      ]
+    },
+    {
+      "name": "get_rule_resulting_information",
+      "label": "get_rule_resulting_information",
+      "params": [
+        {
+          "rule_id": "numeric"
+        },
+        {
+          "secret_id": "numeric"
+        },
+        {
+          "priority": "numeric"
+        }
+      ]
+    }
+  ],
+  "variable_type_operators": {
+    "numeric": [
+      {
+        "name": "equal_to",
+        "label": "Equal To",
+        "input_type": "numeric"
+      },
+      {
+        "name": "less_than",
+        "label": "Less Than",
+        "input_type": "numeric"
+      },
+      {
+        "name": "greater_than",
+        "label": "Greater Than",
+        "input_type": "numeric"
+      }
+    ],
+    "string": [
+      {
+        "name": "equal_to",
+        "label": "Equal To",
+        "input_type": "text"
+      },
+      {
+        "name": "non_empty",
+        "label": "Non Empty",
+        "input_type": "none"
+      }
+    ],
+    "select": [
+      {
+        "name": "contains",
+        "label": "Contains",
+        "input_type": "select"
+      },
+      {
+        "name": "does_not_contain",
+        "label": "Does Not Contain",
+        "input_type": "select"
+      }
+    ]
+  }
+};
   };
 
   function onReady() {
