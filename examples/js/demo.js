@@ -14,11 +14,11 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
               "options": ["us-west-1", "eu-west-1"]},
             { "name": "vpc",
               "label": "VPC",
-              "field_type": "select",
+              "field_type": "string",
               "options": []},
             { "name": "subnet",
               "label": "Subnet",
-              "field_type": "select",
+              "field_type": "string",
               "options": []}
                         ],
           "actions": [
