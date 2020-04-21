@@ -36,7 +36,7 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
   "actions": [
     {
       "name": "get_rule_resulting_information",
-      "label": "get_rule_resulting_information",
+      "label": "Rule Result",
       "params":
         {
           "rule_id": "numeric"
