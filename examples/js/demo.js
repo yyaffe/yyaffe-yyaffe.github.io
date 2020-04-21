@@ -37,11 +37,10 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
     {
       "name": "put_on_sale",
       "label": "Put On Sale",
-      "params": [
+      "params":
         {
           "sale_percentage": "numeric"
         }
-      ]
     },
     {
       "name": "get_rule_resulting_information",
