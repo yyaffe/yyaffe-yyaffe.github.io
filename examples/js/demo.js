@@ -103,7 +103,7 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
     allData = getInitialData();
 
     initializeConditions(allData);
-    initializeActions(allData);
+//    initializeActions(allData);
     initializeForm();
   }
 
