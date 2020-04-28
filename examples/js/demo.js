@@ -125,8 +125,8 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
       e.preventDefault();
       console.log("CONDITIONS");
       console.log(JSON.stringify(conditions.conditionsBuilder("data")));
-      console.log("ACTIONS");
-      console.log(JSON.stringify(actions.actionsBuilder("data")));
+//      console.log("ACTIONS");
+//      console.log(JSON.stringify(actions.actionsBuilder("data")));
     });
   }
   $(onReady);
