@@ -21,13 +21,13 @@ var conditions, actions, nameField, ageField, occupationField, submit, allData;
       ]
     },
     {
-      "name": "vpc",
+      "name": "vpc_id",
       "label": "VPC",
       "field_type": "string",
       "options": []
     },
     {
-      "name": "subnet",
+      "name": "subnet_id",
       "label": "Subnet",
       "field_type": "string",
       "options": []
